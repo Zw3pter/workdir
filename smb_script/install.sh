@@ -38,7 +38,7 @@ sudo systemctl restart smb nmb
 sudo useradd -M -d /samba/master -s /usr/sbin/nologin -G masters master
 
 # Sæt og aktiver brugerens Samba password
-echo -e "V3n1ngT0P\nV3nd1ngT0P" | sudo smbpasswd -a master
+echo -e "V3nd1ngT0P\nV3nd1ngT0P" | sudo smbpasswd -a master
 sudo smbpasswd -e master
 
 # Tilføj Samba til firewall og genindlæs
