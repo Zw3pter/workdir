@@ -31,9 +31,15 @@ sudo bash -c 'cat << EOF > /etc/samba/smb.conf
 [Global]
 workgroup = WORKGROUP
 server string = This is a samba share on centos
-netbios name = FAELLESSHARE
+netbios name = FILSERVER
 wins support = yes
 security = user
+map to guest = bad user
+guest account = nobody
+
+browsable = yes
+read only = nobody
+guest ok = yes
 
 [faelles]
 path = /samba/faelles
