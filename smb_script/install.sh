@@ -24,13 +24,6 @@ netbios name = FAELLESSHARE
 wins support = yes
 security = user
 
-#[off_mappe]
-#path = /samba/off_mappe
-#browsable = yes
-#writable = yes
-#guest ok = yes
-#read only = no
-
 [faelles]
 path = /samba/faelles
 valid users = @masters
