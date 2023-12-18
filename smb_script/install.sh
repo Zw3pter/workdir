@@ -33,12 +33,9 @@ workgroup = WORKGROUP
 server string = This is a samba share on centos
 netbios name = FILSERVER
 wins support = yes
-security = user
 map to guest = bad user
-guest account = nobody
-
 browsable = yes
-read only = nobody
+read only = no
 guest ok = yes
 
 [faelles]
